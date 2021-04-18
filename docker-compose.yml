@@ -1,0 +1,28 @@
+version: "3.5"
+services:
+  __template__website__name-proxy:
+    container_name: __template__website__name-proxy
+    image: nginx:mainline-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "./proxy.conf:/etc/nginx/conf.d/default.conf"
+      - "./certs:/etc/nginx/certs"
+      - ".:/app"
+      __template__website__name:
+    container_name: __template__website__name
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    environment:
+      APP_DEBUG: "true"
+      APP_ENV: "development"
+    volumes:
+      - project_source:/app:rw
+    depends_on:
+      - __template__website__name-proxy
+volumes:
+  project_source:
+    driver: local
+    driver_opts: { o: "bind", type: none, device: "." }

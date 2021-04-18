@@ -1,0 +1,15 @@
+{
+  "name": "lambda-functions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/nodemailer-sendgrid": "^1.0.0",
+    "io-ts": "^2.2.13",
+    "nodemailer": "^6.4.14",
+    "nodemailer-sendgrid": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.0"
+  }
+}

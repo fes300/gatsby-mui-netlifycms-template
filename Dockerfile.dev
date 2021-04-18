@@ -1,0 +1,7 @@
+FROM node:15
+
+ARG UID
+
+RUN apt install autoconf libtool
+
+CMD [ "tail", "-f", "/dev/null"]

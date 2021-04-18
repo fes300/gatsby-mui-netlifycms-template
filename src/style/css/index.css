@@ -1,0 +1,26 @@
+@font-face {
+  font-family: AuxiliaBlack;
+  src: url("../fonts/Auxilia-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AuxiliaBold;
+  src: url("../fonts/Auxilia-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Auxilia;
+  src: url("../fonts/Auxilia.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

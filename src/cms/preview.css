@@ -1,0 +1,7 @@
+.gatsby-image-wrapper {
+  min-height: 200px;
+}
+
+.initial-modal {
+  display: none !important;
+}
